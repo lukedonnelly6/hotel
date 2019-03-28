@@ -4,16 +4,16 @@
     <h1>Menu</h1>
     <ul>
         <li>
-            <a href="room_manager">Room Manager</a>
+            <a href="Room_lists">Room viewer</a>
         </li>
         <li>
-            <a href="product_catalog">Product Catalog</a>
+           <a href="room_manager">Room Manager</a>
         </li>
          <li>
              <a href="customer_manager">Customer Manager</a>
         </li>
     </ul>
     
-    <h1>jhgefiq</h1>
+  
 </main>
 <?php include 'view/footer.php'; ?>

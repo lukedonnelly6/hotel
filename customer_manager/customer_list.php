@@ -1,6 +1,15 @@
 <?php include '../view/header.php'; ?>
 <main>
 
+    <div class="page-header">
+        <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b></h1>
+    </div>
+    <p>
+        <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
+        <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+    </p>   
+
+
     <h1>Customer List</h1>
 
     <aside>
@@ -21,36 +30,36 @@
                 <th>&nbsp;</th>
             </tr>
             <?php foreach ($customerdetails as $customerdetail) : ?>
-            <tr>
-                <td><?php echo $customerdetail['customerName']; ?></td>
-                <td><?php echo $customerdetail['phoneNumber']; ?></td>
-                <td class="right"><?php echo $customerdetail['roomNum']; ?></td>
-                <td><form action="." method="post">
-                    <input type="hidden" name="action"
-                           value="show_edit_form">
-                    <input type="hidden" name="room_id"
-                           value="<?php echo $customerdetail['RoomID']; ?>">
-                    <input type="hidden" name="customer_id"
-                           value="<?php echo $customerdetail['customerID']; ?>">
-                    <input type="submit" value="Edit">
-                </form></td>
-                <td><form action="." method="post">
-                    <input type="hidden" name="action"
-                           value="delete_customer">
-                    <input type="hidden" name="room_id"
-                           value="<?php echo $customerdetail['RoomID']; ?>">
-                    <input type="hidden" name="customer_id"
-                           value="<?php echo $customerdetail['customerID']; ?>">
-                    <input type="submit" value="Delete">
-                </form></td>
-            </tr>
+                <tr>
+                    <td><?php echo $customerdetail['customerName']; ?></td>
+                    <td><?php echo $customerdetail['phoneNumber']; ?></td>
+                    <td class="right"><?php echo $customerdetail['roomNum']; ?></td>
+                    <td><form action="." method="post">
+                            <input type="hidden" name="action"
+                                   value="show_edit_form">
+                            <input type="hidden" name="room_id"
+                                   value="<?php echo $customerdetail['RoomID']; ?>">
+                            <input type="hidden" name="customer_id"
+                                   value="<?php echo $customerdetail['customerID']; ?>">
+                            <input type="submit" value="Edit">
+                        </form></td>
+                    <td><form action="." method="post">
+                            <input type="hidden" name="action"
+                                   value="delete_customer">
+                            <input type="hidden" name="room_id"
+                                   value="<?php echo $customerdetail['RoomID']; ?>">
+                            <input type="hidden" name="customer_id"
+                                   value="<?php echo $customerdetail['customerID']; ?>">
+                            <input type="submit" value="Delete">
+                        </form></td>
+                </tr>
             <?php endforeach; ?>
         </table>
         <p><a href="?action=show_add_form">Add customer</a></p>
         <p><a href="?action=list_customerdates ">List Dates</a></p>
         <br>
-        
-         <p> <a href="../index.php">Menu</a></p>
+
+        <p> <a href="../index.php">Menu</a></p>
     </section>
 
 </main>
