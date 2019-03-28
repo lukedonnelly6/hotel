@@ -1,6 +1,14 @@
 <?php include '../view/header.php'; ?>
 <main>
 
+    <div class="page-header">
+        <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b></h1>
+    </div>
+    <p>
+        <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
+        <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+    </p>   
+
     <h1>Room List</h1>
 
     <aside>
@@ -21,36 +29,36 @@
                 <th>&nbsp;</th>
             </tr>
             <?php foreach ($rooms as $room) : ?>
-            <tr>
-                <td><?php echo $room['roomNum']; ?></td>
-                <td><?php echo $room['roomName']; ?></td>
-                <td class="right"><?php echo $room['dalyRate']; ?></td>
-                <td><form action="." method="post">
-                    <input type="hidden" name="action"
-                           value="show_edit_form">
-                    <input type="hidden" name="room_id"
-                           value="<?php echo $room['RoomID']; ?>">
-                    <input type="hidden" name="category_id"
-                           value="<?php echo $room['categoryID']; ?>">
-                    <input type="submit" value="Edit">
-                </form></td>
-                <td><form action="." method="post">
-                    <input type="hidden" name="action"
-                           value="delete_room">
-                    <input type="hidden" name="room_id"
-                           value="<?php echo $room['RoomID']; ?>">
-                    <input type="hidden" name="category_id"
-                           value="<?php echo $room['categoryID']; ?>">
-                    <input type="submit" value="Delete">
-                </form></td>
-            </tr>
+                <tr>
+                    <td><?php echo $room['roomNum']; ?></td>
+                    <td><?php echo $room['roomName']; ?></td>
+                    <td class="right"><?php echo $room['dalyRate']; ?></td>
+                    <td><form action="." method="post">
+                            <input type="hidden" name="action"
+                                   value="show_edit_form">
+                            <input type="hidden" name="room_id"
+                                   value="<?php echo $room['RoomID']; ?>">
+                            <input type="hidden" name="category_id"
+                                   value="<?php echo $room['categoryID']; ?>">
+                            <input type="submit" value="Edit">
+                        </form></td>
+                    <td><form action="." method="post">
+                            <input type="hidden" name="action"
+                                   value="delete_room">
+                            <input type="hidden" name="room_id"
+                                   value="<?php echo $room['RoomID']; ?>">
+                            <input type="hidden" name="category_id"
+                                   value="<?php echo $room['categoryID']; ?>">
+                            <input type="submit" value="Delete">
+                        </form></td>
+                </tr>
             <?php endforeach; ?>
         </table>
         <p><a href="?action=show_add_form">Add Room</a></p>
         <p><a href="?action=list_Roomcategory">List Floors</a></p>
         <br>
-        
-         <p> <a href="../index.php">Menu</a></p>
+
+        <p> <a href="../index.php">Menu</a></p>
     </section>
 
 </main>

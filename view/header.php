@@ -4,6 +4,7 @@
 <head>
     <title>My Hotel booking</title>
     <link href="../main.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
 <!-- the body section -->
