@@ -3,23 +3,9 @@ require('../model/database.php');
 require('../model/room_db.php');
 require('../model/Roomcategory_db.php');
 
-/**
- * Start the session.
- */
-session_start();
-
-/**
- * Check if the user is logged in.
- */
-if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    header("location: ../Registration/login.php");
-    exit;
-}
 
 
-/**
- * Print out something that only logged in users can see.
- */
+
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
