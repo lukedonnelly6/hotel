@@ -1,4 +1,8 @@
 
+    
+    
+    
+    
 <?php
 include '../view/header.php';
 ?>
@@ -24,7 +28,7 @@ include '../view/header.php';
         <h1>Menu</h1>
         <ul>
             <li>
-                <a href="#room">Room viewer</a>
+                <a href="../room_lists/index.php">Room viewer</a>
             </li>
             <li>
                 <a href="../room_manager/index.php">Room Manager</a>
@@ -74,56 +78,7 @@ include '../view/header.php';
         </section>
 
         <!-- Portfolio Grid -->
-        <section class="bg-light" id="portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading text-uppercase">Rooms</h2>
-
-
-                        <div class="roomlist" id="room">
-                            <main>
-                                <h1>Room List</h1>
-
-
-                                <aside>
-                                    <!-- display a list of categories -->
-                                    <h2>Categories</h2>
-                                    <?php include '../view/Roomcategory_nav.php'; ?>        
-                                </aside>
-
-                                <section>
-                                    <!-- display a table of products -->
-                                    <h2><?php echo $category_room; ?></h2>
-                                    <table>
-                                        <tr>
-                                            <th>Room Number</th>
-                                            <th>Room Name</th>
-                                            <th class="right">Daly Rate</th>
-
-                                        </tr>
-                                        <?php foreach ($rooms as $room) : ?>
-                                            <tr>
-                                                <td><?php echo $room['roomNum']; ?></td>
-                                                <td><?php echo $room['roomName']; ?></td>
-                                                <td class="right"><?php echo $room['dalyRate']; ?></td>
-
-                                            </tr>
-                                        <?php endforeach; ?>
-                                    </table>
-
-                                    <br>
-
-                                    <p> <a href="../index.php">Menu</a></p>
-
-                                </section>
-                            </main>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+       
 
 
 
@@ -600,8 +555,10 @@ include '../view/header.php';
 </html>
 
 
-<?php
-include '../view/footer.php';
-?>
 
-</body>
+
+
+    
+  
+</main>
+<?php include 'view/footer.php'; ?>
