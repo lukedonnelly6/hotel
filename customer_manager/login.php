@@ -91,24 +91,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
   
 <!--<link rel="stylesheet" type="text/css" href="../style.css">-->
+<link href="../main.css" rel="stylesheet" type="text/css"/>
+<body background="../images/Hotel.jpg">
 <div class="wrapper">
-    <h2>Login</h2>
-    <p>Please fill in your credentials to login.</p>
+<!--    <h2>Login</h2>
+    <p>Please fill in your credentials to login.</p>-->
+    <div class="form">
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
             <label>Username</label>
-            <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+            <input type="text" placeholder="Username" class="form-control" value="<?php echo $username; ?>">
             <span class="help-block"><?php echo $username_err; ?></span>
         </div>    
         <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
             <label>Password</label>
-            <input type="password" name="password" class="form-control">
+            <input type="password" placeholder="Password" class="form-control">
             <span class="help-block"><?php echo $password_err; ?></span>
         </div>
-        <div class="form-group">
+        <div class="button">
             <input type="submit" class="btn btn-primary" value="Login">
         </div>
+    </div>
+<div class="div2">
         <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
-        <p> <a href="../index.php">Back to main menu</a>.</p>
+        <p> <a href="../room_lists/Room_list.php">Back to main menu</a>.</p>
+</div>
     </form>
 </div>  
