@@ -114,7 +114,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 <div class="div2">
         <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
-        <p> <a href="../index.php">Back to main menu</a>.</p>
+        <p> <a href="../room_lists/Room_list.php">Back to main menu</a>.</p>
 </div>
     </form>
 </div>  

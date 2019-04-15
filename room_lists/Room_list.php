@@ -20,11 +20,13 @@ include '../view/header.php';
 
 
         <link href="main.css" rel="stylesheet" type="text/css"/>
-
-        <h1>Menu</h1>
+        
+    <center><h1>Menu</h1></center>
+        
+    <center> 
         <ul>
             <li>
-                <a href="#room">Room viewer</a>
+                <a href="#room">Room Viewer</a>
             </li>
             <li>
                 <a href="../room_manager/index.php">Room Manager</a>
@@ -33,6 +35,7 @@ include '../view/header.php';
                 <a href="../customer_manager/index.php">Customer Manager</a>
             </li>
         </ul>
+    </center>
 
 
 
@@ -99,7 +102,7 @@ include '../view/header.php';
                                         <tr>
                                             <th>Room Number</th>
                                             <th>Room Name</th>
-                                            <th class="right">Daly Rate</th>
+                                            <th class="right">Daily Rate</th>
 
                                         </tr>
                                         <?php foreach ($rooms as $room) : ?>
@@ -114,7 +117,7 @@ include '../view/header.php';
 
                                     <br>
 
-                                    <p> <a href="../index.php">Menu</a></p>
+                                    <p> <a href="../room_lists/Room_list.php">Menu</a></p>
 
                                 </section>
                             </main>
