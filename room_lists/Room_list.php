@@ -117,7 +117,9 @@ include '../view/header.php';
 
                                     <br>
 
-                                    <p> <a href="../room_lists/Room_list.php">Menu</a></p>
+
+        <p> <a href="../main/index.php">Menu</a></p>
+
 
                                 </section>
                             </main>

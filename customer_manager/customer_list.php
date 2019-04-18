@@ -1,6 +1,7 @@
 <?php include '../view/header.php'; ?>
 <main>
 
+    <center>
     <div class="page-header">
         <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b></h1>
     </div>
@@ -8,8 +9,9 @@
         <a href="../Registration/reset-password.php" class="btn btn-warning">Reset Your Password</a>
         <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
     </p>   
+    </center>
 
-
+    
     <h1>Customer List</h1>
 
     <aside>
@@ -53,14 +55,19 @@
                             <input type="submit" value="Delete">
                         </form></td>
                 </tr>
+               
             <?php endforeach; ?>
         </table>
+    
+    
+    <center>
         <p><a href="?action=show_add_form">Add customer</a></p>
         <p><a href="?action=list_customerdates ">List Dates</a></p>
         <br>
 
-        <p> <a href="../index.php">Menu</a></p>
-    </section>
-
+        <p> <a href="../main/index.php">Menu</a></p>
+    </center>
+    
+</section>
 </main>
 <?php include '../view/footer.php'; ?>

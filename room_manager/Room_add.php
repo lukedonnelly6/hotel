@@ -1,9 +1,11 @@
 <?php include '../view/header.php'; ?>
 <main>
-    <h1>Add Room</h1>
+    <center><h1>Add Room</h1></center>
     <form action="index.php" method="post" id="add_room_form">
         <input type="hidden" name="action" value="add_room">
 
+        <center>
+            <div class="add">
         <label>Category:</label>
         <select name="category_id">
         <?php foreach ( $roomcategories as $roomcategory ) : ?>
@@ -28,11 +30,18 @@
 
         <label>&nbsp;</label>
         <input type="submit" value="Add room">
+            </div>
+        </center>
         <br>
     </form>
+   
+    <center>
     <p class="last_paragraph">
         <a href="index.php?action=list_Room">View rooms List</a>
     </p>
+<br>
 
+        <p> <a href="../main/index.php">Menu</a></p>
+    </center>
 </main>
 <?php include '../view/footer.php'; ?>

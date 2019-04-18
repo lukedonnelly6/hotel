@@ -1,7 +1,10 @@
 <?php include '../view/header.php'; ?>
 <main>
 
+    <center>
     <h1>Date Category</h1>
+    
+    <div class="cD">
     <table>
         <tr>
             <th>dates</th>
@@ -33,8 +36,13 @@
         <input type="input" name="Cdate">
         <input type="submit" value="Add">
     </form>
+    </div>
 
     <p><a href="index.php?action=list_customer">List Customers</a></p>
+    <br>
 
+        <p> <a href="../main/index.php">Menu</a></p>
+    </center>
+        
 </main>
 <?php include '../view/footer.php'; ?>
