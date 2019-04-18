@@ -64,16 +64,20 @@
     font-weight: bold;
 }
 .roomlist a:hover {
+
     color: rgb(208, 133, 4);
 }
 
 .roomlist2 a:hover {
+
     color: rgb(208, 133, 4);
 }
 
 .roomlist td:hover {background-color: #ddd;}
 
+
 .roomlist2 td:hover {background-color: #ddd;}
+
 
 .roomlist th{
 padding-top: 12px;
@@ -92,7 +96,6 @@ padding-top: 12px;
   color: white;
 
 }
-
 
 .roomlist br {
     clear: left;
@@ -159,7 +162,9 @@ padding-top: 12px;
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
+
   border-radius: 25px;
+
 }
 
 .form
@@ -172,13 +177,14 @@ padding-top: 12px;
   padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
   border-radius: 25px;
+
 }
 
 /*.form:hover {background-color: #ddd;
 opacity: 0%;
 }*/
-
 
 
 .button
@@ -196,6 +202,7 @@ opacity: 0%;
   transition: all 0.3 ease;
   cursor: pointer;
 }
+
 
 .bottom
 {
@@ -257,3 +264,14 @@ border-width: 2px;
    background-color: #FF7133;
    border-radius: 25px;  
 }
+
+.div2
+{
+    padding-left: 550px;
+    background-color: #FF7133;
+    opacity: 1;
+   margin-top: 310px;
+    
+}
+
+

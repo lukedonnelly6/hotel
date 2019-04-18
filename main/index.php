@@ -1,3 +1,4 @@
+
 <?php
 include '../view/header.php';
 ?>
@@ -131,10 +132,12 @@ include '../view/header.php';
                                             <br>Of Our
                                             <br>Story!</h4>
                                     </div>
+
                                 </li>
                             </ul>
                         </div>
                     </div>
+
                 </div>
             </section>
 
@@ -333,12 +336,14 @@ include '../view/header.php';
                                             <i class="fas fa-times"></i>
                                             Close Project</button>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <!-- Modal 2 -->
             <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
@@ -367,12 +372,14 @@ include '../view/header.php';
                                             <i class="fas fa-times"></i>
                                             Close Project</button>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <!-- Modal 3 -->
             <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
@@ -401,12 +408,14 @@ include '../view/header.php';
                                             <i class="fas fa-times"></i>
                                             Close Project</button>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <!-- Modal 4 -->
             <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
@@ -435,12 +444,14 @@ include '../view/header.php';
                                             <i class="fas fa-times"></i>
                                             Close Project</button>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <!-- Modal 5 -->
             <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
@@ -469,12 +480,14 @@ include '../view/header.php';
                                             <i class="fas fa-times"></i>
                                             Close Project</button>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <!-- Modal 6 -->
             <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
@@ -503,12 +516,14 @@ include '../view/header.php';
                                             <i class="fas fa-times"></i>
                                             Close Project</button>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <!-- Bootstrap core JavaScript -->
             <script src="vendor/jquery/jquery.min.js"></script>
@@ -530,4 +545,3 @@ include '../view/header.php';
 
 <?php
 include '../view/footer.php';
-

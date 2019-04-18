@@ -93,6 +93,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!--<link rel="stylesheet" type="text/css" href="../style.css">-->
 <link href="../main.css" rel="stylesheet" type="text/css"/>
 <body background="../images/Hotel.jpg">
+
     <div class="wrapper">
            
         <div class="form">
@@ -121,3 +122,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             
         </div>  
+
