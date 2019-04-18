@@ -1,118 +1,259 @@
 /* the styles for the HTML elements */
-html {
+
+.roomlist html{
+    
     background-color: rgb(192, 192, 192);
 }
-body {
+.roomlist body {
     font-family: Arial, Helvetica, sans-serif;
     width: 760px;
     margin: 0 auto;
     padding: 0 2em;
     background-color: white;
-    border: 1px solid black;
+/*    border: 1px solid black;*/
 }
-header {
-    border-bottom: 2px solid black;
+.roomlist header{
+/*    border-bottom: 2px solid black;*/
     padding: .5em 0;
 }
-header h1 {
+.roomlist header h1 
+{
     color: black;
 }
-main {
+.roomlist main{
 
 }
-aside {
+.roomlist aside {
     float: left;
     width: 150px;
 }
-section {
-    float: left;
-    width: 500px;
+.roomlist section {
+    margin-left: 150px;
+    width: 800px;
 }
-footer {
+.roomlist footer{
     clear: both;
-    border-top: 2px solid black;
+/*    border-top: 2px solid black;*/
 }
-footer p {
+.roomlist footer p{
     text-align: right;
     font-size: 80%;
 }
-h1 {
+.roomlist h1 {
     font-size: 150%;
     margin: .5em 0;
 }
-h2 {
+.roomlist h2 {
     font-size: 120%;
     margin: .25em 0 .5em;
 }
-h1, h2 {
+.roomlist h1, h2 {
     color: rgb(208, 133, 4);
 }
-ul {
+.roomlist ul {
     list-style-type: none;
     margin: 0;
     padding-left: 0;
     padding-bottom: 1em;
 }
-li {
+.roomlist li {
     padding-bottom: 0.5em;
 }
-a {
+.roomlist a {
     color: rgb(41, 64, 124);
     font-weight: bold;
 }
-a:hover {
+.roomlist a:hover {
     color: rgb(208, 133, 4);
 }
-br {
+
+.roomlist2 a:hover {
+    color: rgb(208, 133, 4);
+}
+
+.roomlist td:hover {background-color: #ddd;}
+
+.roomlist2 td:hover {background-color: #ddd;}
+
+.roomlist th{
+padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #FF7133;
+  color: white;
+
+}
+
+.roomlist2 th{
+padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #FF7133;
+  color: white;
+
+}
+
+
+.roomlist br {
     clear: left;
 }
-table {
-    border: 1px solid black;
+.roomlist table {
+/*    border: 1px solid black;*/
     border-collapse: collapse;
     margin-bottom: 1em;
+    margin-left: 250px;
 }
-td, th {
-    border: 1px dashed black;
-    padding: .2em .5em .2em .5em;
-    text-align: left;
+.roomlist td, th {
+/*    border: 1px dashed black;*/
+     border: 1px solid #ddd;
+  padding: 8px;
 }
-form {
+.roomlist form {
 
 }
 /* the styles for classes */
-.right {
+.roomlist .right {
     text-align: right;
 }
-.first_paragraph {
+.roomlist .first_paragraph {
     margin-top: 0;	
 }
-.last_paragraph {
+.roomlist .last_paragraph {
     margin-bottom: 2em;	
 }
 /* the styles for the div tags that divide the page into sections */
-#left_column {
+.roomlist #left_column {
     float: left;
     width: 150px;
-    text-align: center;
+    text-align: left;
 }
-#right_column {
+.roomlist #right_column {
     float: left;
     padding-left: 1em;
     padding-bottom: 2em;
 }
 /* Additional styles for the Product Manager application */
-#add_product_form {
+.roomlist #add_product_form {
     margin: .5em 0;
 }
-#add_product_form label {
+.roomlist #add_product_form label {
     width: 6em;
     padding-right: 1em;
     padding-bottom: .5em;
     float: left;
 }
-#add_product_form input {
+.roomlist #add_product_form input {
     float: left;
 }
-#add_product_form input[text] {
+.roomlist #add_product_form input[text] {
     width: 15em;
+}
+
+.form-control
+{
+    font-family: "Roboto", sans-serif;
+  outline: 0;
+  width: 200px;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 25px;
+}
+
+.form
+{
+   margin-top: 200px;
+  position: relative;
+  z-index: 1;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 25px;
+}
+
+/*.form:hover {background-color: #ddd;
+opacity: 0%;
+}*/
+
+
+
+.button
+{
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  width: 200px;
+  border: 0;
+  padding: 15px;
+  padding-left: 110px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.bottom
+{
+    background-color: wheat;
+    opacity: 0.9;
+    border-radius: 25px;
+}
+
+.edit
+{
+/*   background-color: #FF7133;*/
+border-style: solid;
+border-width: 2px;
+   margin-left: 450px;
+   margin-right: 450px;
+   margin-top: 10px;
+   background-color: #FF7133;
+   border-radius: 25px;
+   
+}
+
+.add
+{
+    border-style: solid;
+border-width: 2px;
+   margin-left: 450px;
+   margin-right: 450px;
+   margin-top: 10px;
+   background-color: #FF7133;
+   border-radius: 25px;
+}
+
+.addC
+{
+ border-style: solid;
+border-width: 2px;
+   margin-left: 450px;
+   margin-right: 450px;
+   margin-top: 10px;
+   background-color: #FF7133;
+   border-radius: 25px;   
+}
+
+.cD th
+{
+  background-color: #FF7133;
+  color: white;
+}
+
+.cD td:hover {background-color: #ddd;}
+
+.eC
+{
+    border-style: solid;
+border-width: 2px;
+   margin-left: 450px;
+   margin-right: 450px;
+   margin-top: 10px;
+   background-color: #FF7133;
+   border-radius: 25px;  
 }

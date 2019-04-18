@@ -1,14 +1,17 @@
 <?php include '../view/header.php'; ?>
 <main>
-
-    <div class="page-header">
+    <link href="../main.css" rel="stylesheet" type="text/css"/>
+    <center>
+    <div class="page-header">       
         <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b></h1>
     </div>
     <p>
         <a href="../Registration/reset-password.php" class="btn btn-warning">Reset Your Password</a>
         <a href="../room_manager/logout.php" class="btn btn-danger">Sign Out of Your Account</a>
     </p>   
+    </center>
 
+    <center>
     <h1>Room List</h1>
 
     <aside>
@@ -16,9 +19,14 @@
         <h2>Categories</h2>
         <?php include '../view/Roomcategory_nav.php'; ?>        
     </aside>
-
+    </center>
+    
     <section>
+        
+        
         <!-- display a table of products -->
+        <div class="roomlist2" id="room2">
+            <center>
         <h2><?php echo $category_room; ?></h2>
         <table>
             <tr>
@@ -54,12 +62,18 @@
                 </tr>
             <?php endforeach; ?>
         </table>
+            </center>
+        
+        
+        <center>
         <p><a href="?action=show_add_form">Add Room</a></p>
         <p><a href="?action=list_Roomcategory">List Floors</a></p>
         <br>
 
-        <p> <a href="../index.php">Menu</a></p>
+        <p> <a href="../main/index.php">Menu</a></p>
+        </center>
+        </div>
     </section>
-
+    
 </main>
 <?php include '../view/footer.php'; ?>

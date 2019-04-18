@@ -1,8 +1,12 @@
 <?php include '../view/header.php'; ?>
-<main>
 
-    <h1>Floor Category</h1>
-    <table>
+<main>
+    
+
+    <center> <h1>Floor Category</h1> </center>
+    <div class="roomlist" id="room">
+        
+        <table>
         <tr>
             <th>Floor</th>
             <th>&nbsp;</th>
@@ -22,9 +26,11 @@
         </tr>
         <?php endforeach; ?>
     </table>
+        
+</div>
     <br />
 
-    <h2>Add Floor Category</h2>
+    <center><h2>Add Floor Category</h2>
     <form id="add_category_form"
           action="index.php" method="post">
         <input type="hidden" name="action" value="add_category">
@@ -34,7 +40,7 @@
         <input type="submit" value="Add">
     </form>
 
-    <p><a href="index.php?action=list_Room">List Rooms</a></p>
-
+        <p><a href="index.php?action=list_Room">List Rooms</a></p></center>
+    <link href="../main.css" rel="stylesheet" type="text/css"/>
 </main>
 <?php include '../view/footer.php'; ?>

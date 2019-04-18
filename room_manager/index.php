@@ -3,6 +3,7 @@ require('../model/database.php');
 require('../model/room_db.php');
 require('../model/Roomcategory_db.php');
 
+
 /**
  * Start the session.
  */
@@ -126,3 +127,4 @@ if ($action == 'list_Room') {
     header('Location: .?action=list_Roomcategory');      // display the Category List page
 }
 ?>
+

@@ -1,5 +1,7 @@
 <?php include '../view/header.php'; ?>
 <main>
+    
+    <center>
     <h1>Edit room</h1>
     <form action="index.php" method="post" id="add_customer_form">
 
@@ -8,6 +10,7 @@
         <input type="hidden" name="room_id"
                value="<?php echo $customerdetail['RoomID']; ?>">
 
+        <div class="eC">
         <label>Customer ID:</label>
         <input type="category_id" name="customer_id"
                value="<?php echo $customerdetail['customerID']; ?>">
@@ -30,9 +33,13 @@
 
         <label>&nbsp;</label>
         <input type="submit" value="Save Changes">
+        </div>
         <br>
     </form>
     <p><a href="index.php?action=list_customer">View Room List</a></p>
+    <br>
 
+        <p> <a href="../main/index.php">Menu</a></p>
+    </center>
 </main>
 <?php include '../view/footer.php'; ?>
